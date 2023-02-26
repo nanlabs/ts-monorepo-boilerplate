@@ -1,0 +1,8 @@
+{
+  "brand": "NaNLabs",
+  "header": {
+    "routerLinkExample": "Router example",
+    "integrations": "Integrations",
+    "cssExample": "Css Example"
+  }
+}

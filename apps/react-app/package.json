@@ -1,0 +1,97 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=16.13"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "prettier --ignore-path .eslintignore --check \"**/*.{js,jsx,ts,tsx,json,css,sass,scss,less,html,md,yml,yaml}\" && eslint src",
+    "lint:fix": "prettier --ignore-path .eslintignore --write \"**/*.{js,jsx,ts,tsx,json,css,sass,scss,less,html,md,yml,yaml}\" && eslint src --fix",
+    "start": "npm run dev",
+    "test": "jest --runInBand --detectOpenHandles --passWithNoTests",
+    "test:watch": "jest -u --runInBand --verbose --watch --detectOpenHandles --passWithNoTests",
+    "test:coverage": "jest -u --coverage --verbose --runInBand --detectOpenHandles --passWithNoTests",
+    "prepare": "is-ci || husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "npm run lint:fix"
+    ],
+    "*.{json,css,sass,scss,less,html,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "npm run lint:fix"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "classnames": "^2.3.2",
+    "hamburger-react": "^2.5.0",
+    "i18next": "^21.8.9",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "i18next-http-backend": "^1.4.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-i18next": "^11.17.1",
+    "react-query": "^3.39.1",
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.41",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-router": "^5.1.18",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components": "^5.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "danger": "^11.0.7",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "husky": "^8.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "is-ci": "^3.0.1",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.6.2",
+    "sass": "^1.58.1",
+    "ts-jest": "^28.0.5",
+    "vite": "^4.1.0",
+    "vite-plugin-pwa": "^0.14.4"
+  }
+}

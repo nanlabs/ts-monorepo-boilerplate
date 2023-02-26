@@ -1,5 +1,5 @@
 {
-  "name": "nancy.js",
+  "name": "ts-monorepo-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nanlabs/nancy.js.git"
+    "url": "git+https://github.com/nanlabs/ts-monorepo-boilerplate.git"
   },
   "author": "ulises-jeremias",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nanlabs/nancy.js/issues"
+    "url": "https://github.com/nanlabs/ts-monorepo-boilerplate/issues"
   },
-  "homepage": "https://github.com/nanlabs/nancy.js#readme",
+  "homepage": "https://github.com/nanlabs/ts-monorepo-boilerplate#readme",
   "devDependencies": {
     "danger": "^11.1.1"
   }

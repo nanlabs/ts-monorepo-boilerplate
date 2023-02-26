@@ -1,5 +1,5 @@
 {
-  "name": "nancy.js",
+  "name": "ts-monorepo-boilerplate",
   "version": "0.0.0",
   "workspaces": [
     "apps/*",
