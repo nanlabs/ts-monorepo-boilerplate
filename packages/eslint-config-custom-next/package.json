@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-ts",
+  "name": "eslint-config-custom",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
@@ -7,7 +7,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@nanlabs/eslint-config-ts": "^0.5.1"
+    "@nanlabs/eslint-config-next": "^0.3.2"
   },
   "devDependencies": {
   }
