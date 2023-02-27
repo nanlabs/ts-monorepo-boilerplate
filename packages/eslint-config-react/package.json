@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-react",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@nanlabs/eslint-config-react": "^0.3.3"
+  },
+  "devDependencies": {
+  }
+}

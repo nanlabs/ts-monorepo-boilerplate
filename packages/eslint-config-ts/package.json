@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-ts",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@nanlabs/eslint-config-ts": "^0.5.1"
+  },
+  "devDependencies": {
+  }
+}

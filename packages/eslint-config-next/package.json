@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-next",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@nanlabs/eslint-config-next": "^0.3.2"
+  },
+  "devDependencies": {
+  }
+}

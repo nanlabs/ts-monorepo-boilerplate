@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ["@nanlabs/eslint-config-ts"],
+  extends: ["eslint-config-base"],
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 2020,
