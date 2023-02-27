@@ -45,13 +45,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install dependencies
-        run: npm install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-
       - name: Copy the .npmrc file to the HOME directory
         run: cp $NPM_CONFIG_USERCONFIG $HOME/.npmrc
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Create Release Pull Request
         id: changesets

@@ -49,10 +49,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - name: Copy the .npmrc file to the HOME directory
+        run: cp $NPM_CONFIG_USERCONFIG $HOME/.npmrc
+
       - name: Install dependencies
         run: npm install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Build page
         run: npm run build-storybook -w @nanlabs/playground
