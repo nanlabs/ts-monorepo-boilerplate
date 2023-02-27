@@ -51,6 +51,8 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Build page
         run: npm run build-storybook -w @nanlabs/playground
