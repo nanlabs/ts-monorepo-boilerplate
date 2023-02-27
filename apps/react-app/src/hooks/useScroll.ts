@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 /**
+* TODO: Update this hook
  * This hook is for listen the scroll event and returns
  * a booolean if it's outside a threshold
  * @returns boolean If the scroll exceeds the threshold
