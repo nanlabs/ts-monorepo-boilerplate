@@ -32,11 +32,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Copy the .npmrc file to the HOME directory and to the project directory
-        run: cp $NPM_CONFIG_USERCONFIG $HOME/.npmrc && cp $NPM_CONFIG_USERCONFIG .npmrc
-
       - name: Install dependencies
         run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Run linter validation
         run: npm run lint
