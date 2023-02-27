@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.0",
+    "@nanlabs/eslint-config": "0.3.2",
     "@nanlabs/eslint-config-ts": "0.5.1",
     "husky": "^8.0.2",
     "is-ci": "^3.0.1",

@@ -26,22 +26,7 @@
     "start": "npm run dev",
     "test": "jest --runInBand --detectOpenHandles --passWithNoTests",
     "test:watch": "jest -u --runInBand --verbose --watch --detectOpenHandles --passWithNoTests",
-    "test:coverage": "jest -u --coverage --verbose --runInBand --detectOpenHandles --passWithNoTests",
-    "prepare": "is-ci || husky install",
-    "lint-staged": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "prettier --write",
-      "npm run lint:fix"
-    ],
-    "*.{json,css,sass,scss,less,html,md,yml,yaml}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "prettier --write",
-      "npm run lint:fix"
-    ]
+    "test:coverage": "jest -u --coverage --verbose --runInBand --detectOpenHandles --passWithNoTests"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -81,13 +66,10 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
-    "is-ci": "^3.0.1",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "jest-transform-stub": "^2.0.0",
-    "lint-staged": "^13.0.1",
     "prettier": "^2.6.2",
     "sass": "^1.58.1",
     "ts-jest": "^28.0.5",
