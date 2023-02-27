@@ -1,4 +1,4 @@
-name: Deployment to GitHub Pages
+name: Plyground Deployment to GitHub Pages
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -32,7 +32,11 @@ jobs:
       - name: Use Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '16.13.2'
+          node-version-file: .node-version
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@nanlabs'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get npm cache directory
         id: npm-cache-dir
