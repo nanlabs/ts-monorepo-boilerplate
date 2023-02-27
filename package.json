@@ -14,7 +14,7 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,sass,scss,less,html,yml,yaml}\"",
     "changeset": "changeset",
     "publish-packages": "turbo run build lint && changeset version && changeset publish"
   },
