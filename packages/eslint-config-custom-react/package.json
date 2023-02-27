@@ -9,6 +9,5 @@
   "dependencies": {
     "@nanlabs/eslint-config-react": "^0.3.3"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

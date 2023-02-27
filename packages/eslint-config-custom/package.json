@@ -9,6 +9,5 @@
   "dependencies": {
     "@nanlabs/eslint-config": "0.3.2"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
