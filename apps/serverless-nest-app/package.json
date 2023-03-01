@@ -4,7 +4,6 @@
   "private": true,
   "description": "",
   "author": "",
-  "private": true,
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
