@@ -42,6 +42,24 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 - **React App** - React app created with [create-react-webpack-app](https://www.npmjs.com/package/create-react-webpack-project) powered by [Vite](https://vitejs.dev/).
 - **Nest.js Service** - Nest.js service created using the [Basic Starter for NestJS on AWS Lambda with Serverless](https://github.com/nanlabs/devops-reference/tree/main/examples/serverless-node-typescript-nest).
 
+## Getting Started
+
+### Requirements
+
+**You’ll need to have Node 16.13.2 or later on your local development machine** (but it’s not required on the server). You can use [fnm](https://github.com/Schniz/fnm) to easily switch Node versions between different projects.
+
+```sh
+fnm use
+```
+
+### Setup
+
+```sh
+cp .env.example .env
+export NODE_AUTH_TOKEN=<your-npm-token>
+npm install
+```
+
 ## Local Development
 
 Each app and service has its own README file with instructions on how to run it locally.
