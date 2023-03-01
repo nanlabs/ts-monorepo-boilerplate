@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["custom-react"],
+  extends: ["@nanlabs/eslint-config-custom-react"],
 };

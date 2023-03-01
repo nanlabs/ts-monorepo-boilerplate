@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-custom-next",
+  "name": "@nanlabs/eslint-config-custom-next",
   "version": "0.0.1",
   "private": true,
   "main": "index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-custom-react",
+  "name": "@nanlabs/eslint-config-custom-react",
   "version": "0.0.1",
   "private": true,
   "main": "index.js",

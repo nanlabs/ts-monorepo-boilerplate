@@ -27,7 +27,7 @@
     "babel-loader": "^8.2.5",
     "eslint": "7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-config-custom-react": "*",
+    "@nanlabs/eslint-config-custom-react": "*",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }
