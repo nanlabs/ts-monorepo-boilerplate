@@ -20,7 +20,7 @@ This project was generated using [create-react-webpack-app](https://www.npmjs.co
 ```sh
 fnm use
 npm install
-npm run start
+npm run start -w @nanlabs/react-app
 ```
 
 ## Useful resources
@@ -32,34 +32,34 @@ npm run start
 
 While developing, you will probably rely mostly on `npm run start`; however, there are additional scripts at your disposal:
 
-| `npm run <script>` | Description                                                                                                             |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| `dev`              | Serves your app at for local development                                                                                |
-| `test`             | Runs unit tests with Jest. See [testing](#testing)                                                                      |
-| `test:watch`       | Runs `test` in watch mode to re-run tests when changed                                                                  |
-| `lint`             | [Lints](http://stackoverflow.com/questions/8503559/what-is-linting) the project for potential errors                    |
-| `lint:fix`         | Lints the project and [fixes all correctable errors](http://eslint.org/docs/user-guide/command-line-interface.html#fix) |
+| `npm run <script> -w @nanlabs/react-app` | Description                                                                                                             |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `dev`                                    | Serves your app at for local development                                                                                |
+| `test`                                   | Runs unit tests with Jest. See [testing](#testing)                                                                      |
+| `test:watch`                             | Runs `test` in watch mode to re-run tests when changed                                                                  |
+| `lint`                                   | [Lints](http://stackoverflow.com/questions/8503559/what-is-linting) the project for potential errors                    |
+| `lint:fix`                               | Lints the project and [fixes all correctable errors](http://eslint.org/docs/user-guide/command-line-interface.html#fix) |
 
 ## Production
 
 Generate production files running
 
 ```sh
-npm run build
+npm run build -w @nanlabs/react-app
 ```
 
 Generate and serve production files running
 
 ```sh
-npm run serve
+npm run serve -w @nanlabs/react-app
 ```
 
 Available scripts:
 
-| `npm run <script>` | Description                                                                                                 |
-| ------------------ | ----------------------------------------------------------------------------------------------------------- |
-| `preview`          | Serves your app using your production ready setup (`.env.production` and `NODE_ENV` equals to `production`) |
-| `build`            | Builds the application to `dist/`                                                                           |
+| `npm run <script> -w @nanlabs/react-app` | Description                                                                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `preview`                                | Serves your app using your production ready setup (`.env.production` and `NODE_ENV` equals to `production`) |
+| `build`                                  | Builds the application to `dist/`                                                                           |
 
 ## Testing
 

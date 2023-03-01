@@ -16,7 +16,7 @@ npm install
 To simulate the app running on Lambda locally, run the following:
 
 ```bash
-npm run sls:offline
+npm run sls:offline -w @nanlabs/serverless-nest-app
 ```
 
 The application will be available at `http://localhost:3000/local/hello`.
@@ -29,5 +29,5 @@ to set your credentials, for more information refer to the [AWS documentation](h
 Once set you can deploy your app using the serverless framework with:
 
 ```bash
-npm run sls:deploy
+npm run sls:deploy -w @nanlabs/serverless-nest-app
 ```

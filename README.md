@@ -36,6 +36,40 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 - **Nest.js** - There is a [Nest.js](https://nestjs.com/) service inside the services folder.
 - **Storybook** - There is a [Storybook](https://storybook.js.org/) playground inside the playgrounds folder.
 
+## Applications
+
+- **Playground** - A [Storybook](https://storybook.js.org/) playground.
+- **React App** - React app created with [create-react-webpack-app](https://www.npmjs.com/package/create-react-webpack-project) powered by [Vite](https://vitejs.dev/).
+- **Nest.js Service** - Nest.js service created using the [Basic Starter for NestJS on AWS Lambda with Serverless](https://github.com/nanlabs/devops-reference/tree/main/examples/serverless-node-typescript-nest).
+
+## Local Development
+
+Each app and service has its own README file with instructions on how to run it locally.
+
+## Running Linters
+
+```sh
+fnm use
+npm i
+npm run lint
+```
+
+or to fix linting errors
+
+```sh
+fnm use
+npm i
+npm run lint:fix
+```
+
+## Running Tests
+
+```sh
+fnm use
+npm i
+npm run test
+```
+
 ## Contributing
 
 - Contributions make the open source community such an amazing place to learn, inspire, and create.
