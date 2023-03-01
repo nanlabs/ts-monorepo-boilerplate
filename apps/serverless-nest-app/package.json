@@ -1,6 +1,7 @@
 {
   "name": "@nanlabs/serverless-nest-app",
   "version": "0.0.1",
+  "private": true,
   "description": "",
   "author": "",
   "private": true,
