@@ -16,6 +16,10 @@ jobs:
 
       - name: Use Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@nanlabs"
 
       - name: Get npm cache directory
         id: npm-cache-dir
