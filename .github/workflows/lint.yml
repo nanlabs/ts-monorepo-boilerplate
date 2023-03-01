@@ -10,9 +10,6 @@ jobs:
   linter:
     runs-on: ubuntu-latest
 
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
     steps:
       - name: Begin CI...
         uses: actions/checkout@v3
@@ -21,6 +18,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: .node-version
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@nanlabs"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get npm cache directory
         id: npm-cache-dir
@@ -34,6 +35,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - name: Copy the .npmrc file to the HOME directory
+        run: cp $NPM_CONFIG_USERCONFIG $HOME/.npmrc
 
       - name: Install dependencies
         run: npm install
