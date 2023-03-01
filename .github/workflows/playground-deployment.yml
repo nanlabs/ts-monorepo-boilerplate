@@ -36,12 +36,13 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@nanlabs"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get npm cache directory
         id: npm-cache-dir
         run: |
           echo "::set-output name=dir::$(npm config get cache)"
+
       - uses: actions/cache@v3
         id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
         with:
@@ -50,8 +51,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Copy the .npmrc file to the HOME directory and to the project directory
-        run: cp $NPM_CONFIG_USERCONFIG $HOME/.npmrc && cp $NPM_CONFIG_USERCONFIG .npmrc
+      - name: Copy the .npmrc file to the HOME directory
+        run: cp $NPM_CONFIG_USERCONFIG $HOME/.npmrc
 
       - name: Install dependencies
         run: npm install
