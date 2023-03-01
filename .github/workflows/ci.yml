@@ -23,6 +23,7 @@ jobs:
   linter:
     name: Linter
     uses: ./.github/workflows/lint.yml
+    secrets: inherit
 
   shellcheck:
     name: Shellcheck
