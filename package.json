@@ -6,18 +6,18 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "is-ci || husky install",
-    "lint-staged": "lint-staged",
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "storybook": "turbo run storybook",
     "build-storybook": "turbo run build-storybook",
-    "test": "turbo run test",
+    "changeset": "changeset",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,sass,scss,less,html,yml,yaml}\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,sass,scss,less,html,yml,yaml}\"",
-    "changeset": "changeset",
-    "publish-packages": "turbo run build lint && changeset version && changeset publish"
+    "lint-staged": "lint-staged",
+    "local": "docker-compose -f ./local-dev/compose.yml up",
+    "prepare": "is-ci || husky install",
+    "publish-packages": "turbo run build lint && changeset version && changeset publish",
+    "storybook": "turbo run storybook",
+    "test": "turbo run test"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

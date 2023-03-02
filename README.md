@@ -35,7 +35,7 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 - **React** - There is a [React](https://reactjs.org/) app inside the apps folder.
 - **Nest.js** - There is a [Nest.js](https://nestjs.com/) service inside the services folder.
 - **Storybook** - There is a [Storybook](https://storybook.js.org/) playground inside the playgrounds folder.
-- **Local Development** - Local development using Docker Compose, Serverless Offline, and Vite.
+- **Local Development Environment** - Local development using Docker Compose, Serverless Offline, and Vite.
 - **RDS Postgres Deployment** - Deployment to AWS RDS Postgres using Serverless.
 
 ## Applications
@@ -43,52 +43,54 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 - **Playground** - A [Storybook](https://storybook.js.org/) playground.
 - **React App** - React app created with [create-react-webpack-app](https://www.npmjs.com/package/create-react-webpack-project) powered by [Vite](https://vitejs.dev/).
 - **Nest.js Service** - Nest.js service created using the [Basic Starter for NestJS on AWS Lambda with Serverless](https://github.com/nanlabs/devops-reference/tree/main/examples/serverless-node-typescript-nest).
+- **Serverless RDS Postgres** - Serverless deployment to AWS RDS Postgres using [Serverless](https://www.serverless.com/).
 
 ## Getting Started
 
 ### Requirements
 
-**You’ll need to have Node 16.13.2 or later on your local development machine** (but it’s not required on the server). You can use [fnm](https://github.com/Schniz/fnm) to easily switch Node versions between different projects.
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- NodeJS - **You’ll need to have Node 16.13.2 or later on your local development machine** (but it’s not required on the server). You can use [fnm](https://github.com/Schniz/fnm) to easily switch Node versions between different projects.
+
+### Setup Local Environment
+
+- Copy the `.env.example` file to `.env` and fill in the values.
+
+```sh
+cp ./local-dev/.env.example ./local-dev/.env
+```
+
+- Setup the correct NodeJS version using `fnm` and install dependencies.
 
 ```sh
 fnm use
-```
-
-### Setup
-
-```sh
-cp .env.example .env
 export NODE_AUTH_TOKEN=<your-npm-token>
 npm install
 ```
 
-## Local Development
-
-Each app and service has its own README file with instructions on how to run it locally.
-
-## Running Linters
+- Run the local dev environment.
 
 ```sh
-fnm use
-npm i
-npm run lint
+npm run local:up
 ```
 
-or to fix linting errors
+### Running the Applications
 
-```sh
-fnm use
-npm i
-npm run lint:fix
-```
+Each app and service has its own `README.md` file with instructions on how to run it locally.
 
-## Running Tests
+## Available Scripts
 
-```sh
-fnm use
-npm i
-npm run test
-```
+In the project directory, you can run:
+
+| `npm run <script>` | Description                                                                                                             |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| `test`             | Runs unit tests with Jest.                                                                                              |
+| `lint`             | [Lints](http://stackoverflow.com/questions/8503559/what-is-linting) the project for potential errors                    |
+| `lint:fix`         | Lints the project and [fixes all correctable errors](http://eslint.org/docs/user-guide/command-line-interface.html#fix) |
+| `format`           | Formats the project using [Prettier](https://prettier.io/)                                                              |
+| `storybook`        | Runs [Storybook](https://storybook.js.org/)                                                                             |
+| `build-storybook`  | Builds [Storybook](https://storybook.js.org/)                                                                           |
 
 ## Contributing
 

@@ -20,9 +20,6 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "dev": {
-      "cache": false
-    },
     "test": {
       "cache": false
     }
