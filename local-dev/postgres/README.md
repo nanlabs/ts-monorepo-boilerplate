@@ -7,8 +7,8 @@
 ## Quickstart
 
 ```sh
-git clone https://github.com/Werkx/werkx-app.git
-cd werkx-app
+git clone https://github.com/nanlabs/ts-monorepo-boilerplate.git
+cd ts-monorepo-boilerplate
 cp .env.example .env
 docker compose up
 ```

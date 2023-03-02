@@ -24,6 +24,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.282.0",
     "@nestjs/common": "^9.3.9",
     "@nestjs/core": "^9.3.9",
     "@nestjs/platform-express": "^9.3.9",
@@ -31,9 +32,11 @@
     "@vendia/serverless-express": "^4.10.1",
     "aws-lambda": "^1.0.7",
     "aws-lambda-fastify": "^1.7.1",
+    "aws-sdk": "^2.1326.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.8.0"
+    "rxjs": "^7.8.0",
+    "serverless-offline-ssm": "^6.2.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.2.0",
@@ -58,6 +61,7 @@
     "ts-jest": "^28.0.8",
     "ts-loader": "^8.4.0",
     "ts-node": "^9.1.1",
+    "tsconfig": "*",
     "tsconfig-paths": "^3.14.2",
     "typescript": "^4.9.5"
   },

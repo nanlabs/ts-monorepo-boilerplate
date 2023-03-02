@@ -20,3 +20,4 @@ ideas.txt
 *.log
 
 .env
+!.env.local
