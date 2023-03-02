@@ -79,7 +79,7 @@ npm run local:up
 
 Each app and service has its own `README.md` file with instructions on how to run it locally.
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
