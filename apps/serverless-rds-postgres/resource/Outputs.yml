@@ -1,0 +1,34 @@
+Outputs:
+  RDSPostgresSecurityGroup:
+    Description: The security group of the RDS Postgres instance
+    Value: ${self:variables.values.RDSPostgresSecurityGroup}
+  RDSPostgresEndpoint:
+    Description: The endpoint of the RDS Postgres instance
+    Value: ${self:variables.values.RDSPostgresEndpoint}
+  RDSPostgresPort:
+    Description: The port of the RDS Postgres instance
+    Value: ${self:variables.values.RDSPostgresPort}
+  RDSPostgresConnectionSecretName:
+    Description: The name of the secret that contains the connection information of the RDS Postgres instance
+    Value: ${self:variables.values.RDSPostgresConnectionSecretName}
+  VpcId:
+    Description: The ID of the VPC
+    Value: ${self:variables.values.VpcId}
+  VPCDefaultSecurityGroup:
+    Description: The ID of the default security group of the VPC
+    Value: ${self:variables.values.VPCDefaultSecurityGroup}
+  PublicSubnetOne:
+    Description: The ID of the public subnet one
+    Value: ${self:variables.values.PublicSubnetOne}
+  PublicSubnetTwo:
+    Description: The ID of the public subnet two
+    Value: ${self:variables.values.PublicSubnetTwo}
+  PrivateSubnetOne:
+    Description: The ID of the private subnet one
+    Value: ${self:variables.values.PrivateSubnetOne}
+  PrivateSubnetTwo:
+    Description: The ID of the private subnet two
+    Value: ${self:variables.values.PrivateSubnetTwo}
+  Cloud9env:
+    Description: The name of the Cloud9 environment
+    Value: ${self:variables.values.Cloud9env}

@@ -1,0 +1,96 @@
+Resources:
+  PrivateSubnetOne:
+    Type: AWS::EC2::Subnet
+    Condition: CreateNetworkResources
+    Properties:
+      VpcId: ${self:variables.values.VpcId}
+      CidrBlock:
+        Fn::Select:
+          - 0
+          - Fn::Cidr:
+              - ${self:custom.vpc.cidr}
+              - 12
+              - 8
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: ${self:service}-${self:provider.stage}-private-subnet-1
+
+  PrivateSubnetOneRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Condition: CreateNetworkResources
+    Properties:
+      SubnetId: !Ref PrivateSubnetOne
+      RouteTableId: !Ref PrivateRouteTableOne
+
+  PrivateSubnetTwo:
+    Type: AWS::EC2::Subnet
+    Condition: CreateNetworkResources
+    Properties:
+      VpcId: ${self:variables.values.VpcId}
+      CidrBlock:
+        Fn::Select:
+          - 1
+          - Fn::Cidr:
+              - ${self:custom.vpc.cidr}
+              - 12
+              - 8
+      AvailabilityZone: !Select [1, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: ${self:service}-${self:provider.stage}-private-subnet-2
+
+  PrivateSubnetTwoRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Condition: CreateNetworkResources
+    Properties:
+      SubnetId: !Ref PrivateSubnetTwo
+      RouteTableId: !Ref PrivateRouteTableTwo
+
+  PublicSubnetOne:
+    Type: AWS::EC2::Subnet
+    Condition: CreateVpc
+    Properties:
+      VpcId: ${self:variables.values.VpcId}
+      CidrBlock:
+        Fn::Select:
+          - 2
+          - Fn::Cidr:
+              - ${self:custom.vpc.cidr}
+              - 12
+              - 8
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: ${self:service}-${self:provider.stage}-public-subnet-1
+
+  PublicSubnetOneRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Condition: CreateVpc
+    Properties:
+      SubnetId: !Ref PublicSubnetOne
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnetTwo:
+    Type: AWS::EC2::Subnet
+    Condition: CreateVpc
+    Properties:
+      VpcId: ${self:variables.values.VpcId}
+      CidrBlock:
+        Fn::Select:
+          - 3
+          - Fn::Cidr:
+              - ${self:custom.vpc.cidr}
+              - 12
+              - 8
+      AvailabilityZone: !Select [1, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: ${self:service}-${self:provider.stage}-public-subnet-2
+
+  PublicSubnetTwoRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Condition: CreateVpc
+    Properties:
+      SubnetId: !Ref PublicSubnetTwo
+      RouteTableId: !Ref PublicRouteTable

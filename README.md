@@ -35,6 +35,8 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 - **React** - There is a [React](https://reactjs.org/) app inside the apps folder.
 - **Nest.js** - There is a [Nest.js](https://nestjs.com/) service inside the services folder.
 - **Storybook** - There is a [Storybook](https://storybook.js.org/) playground inside the playgrounds folder.
+- **Local Development** - Local development using Docker Compose, Serverless Offline, and Vite.
+- **RDS Postgres Deployment** - Deployment to AWS RDS Postgres using Serverless.
 
 ## Applications
 

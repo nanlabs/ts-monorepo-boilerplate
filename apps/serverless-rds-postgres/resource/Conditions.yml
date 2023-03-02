@@ -1,0 +1,27 @@
+Conditions:
+  CreateRDSPostgres:
+    Fn::Equals:
+      - ${param:skipRDSPostgresCreation, env:SKIP_RDS_POSTGRES_CREATION, 'false'}
+      - "false"
+  CreateNetworkResources:
+    Fn::Equals:
+      - ${param:skipNetworkResources, env:SKIP_NETWORK_RESOURCES, 'false'}
+      - "false"
+  CreateVpc:
+    Fn::And:
+      - Condition: CreateNetworkResources
+      - Fn::Equals:
+          - ${param:VpcId, env:VPC_ID, ''}
+          - ""
+  CreateCloud9Environment:
+    Fn::And:
+      - Condition: CreateRDSPostgres
+      - Fn::Equals:
+          - ${param:skipCloud9Environment, env:SKIP_RDS_POSTGRES_CLOUD9_ENVIRONMENT, 'false'}
+          - "false"
+  CreateNatGateways:
+    Fn::And:
+      - Condition: CreateNetworkResources
+      - Fn::Equals:
+          - ${param:skipNatGatewayCreation, env:SKIP_NAT_GATEWAY_CREATION, 'false'}
+          - "false"
