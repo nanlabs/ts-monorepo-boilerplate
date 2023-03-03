@@ -55,12 +55,6 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 
 ### Setup Local Environment
 
-- Copy the `.env.example` file to `.env` and fill in the values.
-
-```sh
-cp ./local-dev/.env.example ./local-dev/.env
-```
-
 - Setup the correct NodeJS version using `fnm` and install dependencies.
 
 ```sh
