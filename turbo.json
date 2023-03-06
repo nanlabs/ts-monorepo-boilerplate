@@ -12,6 +12,9 @@
     "lint:fix": {
       "outputs": []
     },
+    "typecheck": {
+      "outputs": []
+    },
     "storybook": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
