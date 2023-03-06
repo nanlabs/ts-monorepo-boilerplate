@@ -1,11 +1,4 @@
 {
   "root": true,
-  "extends": ["@nanlabs/eslint-config-custom-react"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 2020,
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  }
+  "extends": ["@nanlabs/eslint-config-custom-react"]
 }
