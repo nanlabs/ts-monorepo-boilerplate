@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint **/*.ts*",
     "lint:fix": "eslint **/*.ts* --fix",
+    "type-check": "tsc --noEmit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
