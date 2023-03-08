@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "services/*"
   ],
   "scripts": {
     "build": "turbo run build",
