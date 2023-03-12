@@ -63,6 +63,8 @@ export NODE_AUTH_TOKEN=<your-npm-token>
 npm install
 ```
 
+> NOTE: if you are working in a `arm64` platform (e.g MacBook with m1 or m2 chip), you might need to run `npm i turbo && npm i`.
+
 - Run the local dev environment.
 
 ```sh

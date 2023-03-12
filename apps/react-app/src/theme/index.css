@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
+#root {
   display: flex;
   position: relative;
   min-height: 100%;
