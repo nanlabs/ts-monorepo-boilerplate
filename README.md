@@ -41,7 +41,7 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 ## Applications and Services
 
 - **Playground** - A [Storybook](https://storybook.js.org/) playground.
-- **React App** - React app created with [create-react-webpack-app](https://www.npmjs.com/package/create-react-webpack-project) powered by [Vite](https://vitejs.dev/).
+- **React App** - React app created with [create-awesome-node-app](https://www.npmjs.com/package/create-awesome-node-app) powered by [Vite](https://vitejs.dev/).
 - **Nest.js Service** - Nest.js service created using the [Basic Starter for NestJS on AWS Lambda with Serverless](https://github.com/nanlabs/devops-reference/tree/main/examples/serverless-node-typescript-nest).
 - **Serverless RDS Postgres** - Serverless deployment to AWS RDS Postgres using [Serverless](https://www.serverless.com/).
 
