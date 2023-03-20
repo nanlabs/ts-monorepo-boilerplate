@@ -38,6 +38,37 @@ This repository is a starter kit for a TypeScript monorepo project. It is based 
 - **Local Development Environment** - Local development using Docker Compose, Serverless Offline, and Vite.
 - **RDS Postgres Deployment** - Deployment to AWS RDS Postgres using Serverless.
 
+## Pre-packed
+
+### Dev tools
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Turbo](https://turborepo.com/) - A monorepo manager for JavaScript and TypeScript
+- [Changesets](https://github.com/changesets/changesets) - A way to manage your versioning and changelogs with a focus on multi-package repositories
+- [npm-run-all](https://github.com/mysticatea/npm-run-all) - Run multiple npm-scripts in parallel or sequential
+- [eslint](https://eslint.org/) - Linting utility for JavaScript and JSX
+- [prettier](https://prettier.io/) - Opinionated code formatter
+- [husky](https://www.npmjs.com/package/husky) - Git hooks made easy
+- [lint-staged](https://www.npmjs.com/package/lint-staged) - Run linters against staged git files and don't let 💩 slip into your code base!
+
+### Continuous Integration
+
+We use [GitHub Actions](https://github.com/features/actions) to run our continuous integration pipeline. The pipeline is defined in the [ci.yml](./.github/workflows/ci.yml) file. The pipeline runs the following steps:
+
+- **Linter** - Runs the linter on the project (using `npm run lint`). This step will fail if the linter finds any errors.
+- **Type Check** - Runs the type checker on the project (using `npm run typecheck`). This step will fail if the type checker finds any errors.
+- **Shell Check** - Runs the shell checker on the project. This step will fail if the shell checker finds any errors.
+- **Markdown Lint** - Runs the markdown linter on the project. This step will fail if the markdown linter finds any errors.
+- **TODOs to GitHub Issues** - Creates GitHub issues for all TODOs in the project.
+- **Pull Request Review** - Adds a comment to the pull request with a summary of the changes.
+
+## Applications and Services
+
+- **Playground** - A [Storybook](https://storybook.js.org/) playground.
+- **React App** - React app created with [create-awesome-node-app](https://www.npmjs.com/package/create-awesome-node-app) powered by [Vite](https://vitejs.dev/).
+- **WebExtension** - WebExtension created with [create-awesome-node-app](https://www.npmjs.com/package/create-awesome-node-app) powered by [Vite](https://vitejs.dev/) and [WebExtension-Polyfill](https://github.com/mozilla/webextension-polyfill).
+- **Sls-Api** - Serverless API created based on [Serverless Framework](https://www.serverless.com/).
+
 ## Applications and Services
 
 - **Playground** - A [Storybook](https://storybook.js.org/) playground.
