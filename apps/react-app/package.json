@@ -15,7 +15,7 @@
     ]
   },
   "engines": {
-    "node": ">=18.15"
+    "node": ">=16.16"
   },
   "scripts": {
     "dev": "vite",

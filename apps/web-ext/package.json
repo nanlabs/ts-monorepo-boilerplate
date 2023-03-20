@@ -4,7 +4,7 @@
   "description": "A web extension starter template",
   "private": true,
   "engines": {
-    "node": ">=18.15"
+    "node": ">=16.16"
   },
   "browserslist": {
     "production": [
@@ -31,6 +31,13 @@
     "web-ext:chromium": "web-ext run --source-dir ./dist --target=chromium",
     "web-ext:firefox": "web-ext run --source-dir ./dist --target=firefox-desktop",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "web-vitals": "^2.1.4",
+    "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
