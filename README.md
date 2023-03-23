@@ -23,6 +23,8 @@
 
 This repository is a starter kit for a TypeScript monorepo project. It is based on TypeScript, Npm, ESLint, Prettier, Jest, Turborepo and Changesets.
 
+This project was generated using [create-awesome-node-app](https://www.npmjs.com/package/create-awesome-node-app). **DON'T USE THIS TEMPLATE AS IT!** Generate yours using the command and following the options in the interactive menu. Check the docs for more information!
+
 ## Features
 
 - **Monorepo** - All packages are managed by [Turborepo](https://turborepo.com/).
