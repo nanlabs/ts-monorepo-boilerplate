@@ -13,9 +13,11 @@ This is the state that only a component needs, and it is not meant to be shared 
 
 This is the state that controls interactive parts of an application. Opening modals, notifications, changing color mode, etc. For best performance and maintainability, keep the state as close as possible to the components that are using it. Don't make everything global out of the box.
 
-Our recommendation is:
+Our recommendation is to use any of the following state management libraries:
 
 - [jotai](https://github.com/pmndrs/jotai)
+- [recoil](https://recoiljs.org/)
+- [zustand](https://github.com/pmndrs/zustand)
 
 ## Server Cache State
 

@@ -38,7 +38,6 @@ This project was generated using [create-awesome-node-app](https://www.npmjs.com
 - **Nest.js** - There is a [Nest.js](https://nestjs.com/) service inside the services folder.
 - **Storybook** - There is a [Storybook](https://storybook.js.org/) playground inside the playgrounds folder.
 - **Local Development Environment** - Local development using Docker Compose, Serverless Offline, and Vite.
-- **RDS Postgres Deployment** - Deployment to AWS RDS Postgres using Serverless.
 
 ## Pre-packed
 
@@ -69,7 +68,6 @@ We use [GitHub Actions](https://github.com/features/actions) to run our continuo
 - **Playground** - A [Storybook](https://storybook.js.org/) playground.
 - **React App** - React app created with [create-awesome-node-app](https://www.npmjs.com/package/create-awesome-node-app) powered by [Vite](https://vitejs.dev/).
 - **Nest.js Service** - Nest.js service created using the [Basic Starter for NestJS on AWS Lambda with Serverless](https://github.com/nanlabs/devops-reference/tree/main/examples/serverless-node-typescript-nest).
-- **Serverless RDS Postgres** - Serverless deployment to AWS RDS Postgres using [Serverless](https://www.serverless.com/).
 - **WebExtension** - WebExtension created with [create-awesome-node-app](https://www.npmjs.com/package/create-awesome-node-app) powered by [Vite](https://vitejs.dev/) and [WebExtension-Polyfill](https://github.com/mozilla/webextension-polyfill).
 
 ## Getting Started
