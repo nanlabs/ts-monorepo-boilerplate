@@ -8,7 +8,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@nanlabs/eslint-config": "0.3.2"
+    "@nanlabs/eslint-config": "0.3.7"
   },
   "devDependencies": {}
 }
