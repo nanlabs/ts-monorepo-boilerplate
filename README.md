@@ -14,12 +14,28 @@
 [Contributing](./CONTRIBUTING.md)
 
 </div>
+
+<div align="center">
+  <a href="https://www.npmjs.com/package/create-awesome-node-app">
+    <img src="https://img.shields.io/badge/Generated%20with-Create%20Awesome%20Node%20App-6B46C1?style=for-the-badge&logo=npm" alt="Generated with Create Awesome Node App">
+  </a>
+  <a href="https://github.com/Create-Node-App">
+    <img src="https://img.shields.io/badge/Powered%20by-Create%E2%80%A2Node%E2%80%A2App-223344?style=for-the-badge&logo=github" alt="Powered by Create-Node-App">
+  </a>
+</div>
+
 <div align="center">
 
 [![Continious Integration][cibadge]][ciurl]
 [![License: MIT][licensebadge]][licenseurl]
 
 </div>
+
+<div align="center">
+  <p><strong>NaNLABS</strong> uses and actively contributes to the maintenance of <a href="https://www.npmjs.com/package/create-awesome-node-app">Create Awesome Node App</a> — an open-source CLI tool for scaffolding Node.js projects.</p>
+</div>
+
+---
 
 This repository is a starter kit for a TypeScript monorepo project. It is based on TypeScript, Npm, ESLint, Prettier, Jest, Turborepo and Changesets.
 
@@ -50,7 +66,7 @@ This project was generated using [create-awesome-node-app](https://www.npmjs.com
 - [eslint](https://eslint.org/) - Linting utility for JavaScript and JSX
 - [prettier](https://prettier.io/) - Opinionated code formatter
 - [husky](https://www.npmjs.com/package/husky) - Git hooks made easy
-- [lint-staged](https://www.npmjs.com/package/lint-staged) - Run linters against staged git files and don't let 💩 slip into your code base!
+- [lint-staged](https://www.npmjs.com/package/lint-staged) - Run linters against staged git files and don't let shit slip into your code base!
 
 ### Continuous Integration
 
@@ -76,7 +92,7 @@ We use [GitHub Actions](https://github.com/features/actions) to run our continuo
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- NodeJS - **You’ll need to have Node 18.15.0 or later on your local development machine** (but it’s not required on the server). You can use [fnm](https://github.com/Schniz/fnm) to easily switch Node versions between different projects.
+- NodeJS - **You'll need to have Node 18.15.0 or later on your local development machine** (but it's not required on the server). You can use [fnm](https://github.com/Schniz/fnm) to easily switch Node versions between different projects.
 
 ### Setup Local Environment
 
